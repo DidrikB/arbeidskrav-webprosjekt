@@ -23,6 +23,14 @@
         display: none;
     }
 
+    
+    .hamburger-menu{
+        margin: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+    }
+
 
     
 
@@ -43,9 +51,11 @@
       
     }
     
-    
+    /*
+    PC 990 PX AND BIGGER
+    */
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 990px) {
     
         .header-nav{
             display: flex;
@@ -56,4 +66,26 @@
         }
        
     }
+
+    /*
+    TABLET 480 - 990PX
+    */
+    
+
+    @media screen and (min-width: 480px) {
+    
+       
+    }
+
+    /*
+    MOBILE UNDER 480 PX
+    */
+
+    @media screen and (max-width: 479px) {
+    
+
+       
+    }
+
+
 }
