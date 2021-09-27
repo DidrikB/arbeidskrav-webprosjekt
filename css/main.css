@@ -72,7 +72,7 @@ table {
   color: #F2B705;
 }
 .header .header-nav {
-  display: none;
+  display: flex;
 }
 .header .header-nav-content {
   display: flex;
