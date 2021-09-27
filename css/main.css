@@ -63,15 +63,6 @@ table {
   position: fixed;
   top: 0;
   width: 100vw;
-  /*
-      Mobile  
-  */
-  /*
-      Tablet  
-  */
-  /*
-      PC  
-  */
 }
 .header .header-logo {
   text-decoration: none;
@@ -82,9 +73,6 @@ table {
 }
 .header .header-nav {
   display: none;
-}
-.header .hamburger-menu {
-  display: flex;
 }
 .header .header-nav-content {
   display: flex;
@@ -98,25 +86,12 @@ table {
 .header .header-nav-content .header-nav-content__link:hover {
   background-color: #0477BF;
 }
-@media screen and (max-width: 479px) {
-  .header .header-nav {
-    display: none;
-  }
-  .header .header-logo {
-    display: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .header .header-nav {
-    display: none;
-  }
-  .header .hamburger-menu {
     display: flex;
   }
-}
-@media screen and (min-width: 1024px) {
-  .header .header-nav {
-    display: block;
+  .header .hamburger-menu {
+    display: none;
   }
 }
 
