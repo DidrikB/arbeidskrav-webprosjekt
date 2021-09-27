@@ -6,7 +6,7 @@ const changeDisplay = () => {
     const display = headerContainer.style.display;
 
     if(display === "none" || display == ""){
-        headerContainer.style.display = "block";
+        headerContainer.style.display = "flex";
     }else {
         headerContainer.style.display = "none";
     }
