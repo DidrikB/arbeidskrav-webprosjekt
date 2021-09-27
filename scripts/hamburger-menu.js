@@ -1,5 +1,5 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-const headerContainer = document.querySelector(".header-container");
+const headerContainer = document.querySelector(".header-nav");
 
 const changeDisplay = () => {
 
