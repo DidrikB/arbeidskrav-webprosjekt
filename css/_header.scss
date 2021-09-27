@@ -1,0 +1,74 @@
+.header{
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+
+    position: fixed;
+    top: 0; 
+    width: 100vw;
+
+    .header-logo{
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        padding: 1rem;
+        color: $text;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .header-nav-content{
+        display: flex;
+
+        .header-nav-content__link{
+            padding: 2rem;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: $text;
+            
+
+            &:hover{
+                background-color: $secondary;
+            }
+        }
+      
+    }
+
+    /*
+        Mobile  
+    */
+    @media  screen and (max-width: 479px) {
+    
+        .header-nav{
+            display: none;
+        }
+
+        .header-logo{
+            display: none;
+        }
+    }
+    
+    /*
+        Tablet  
+    */
+    @media  screen and (min-width: 479px) {
+    
+        .header-nav{
+            display: none;
+        }
+    }
+    
+    /*
+        PC  
+    */
+    @media  screen and (min-width: 1024px) {
+    
+        .header-nav{
+            display: block;
+        }
+    }
+}
