@@ -26,8 +26,6 @@
     
     .hamburger-menu{
         margin: 1rem;
-        width: 2rem;
-        height: 2rem;
 
     }
 
@@ -36,12 +34,14 @@
 
     .header-nav-content{
         display: flex;
+        flex-direction: row;
 
         .header-nav-content__link{
             padding: 2rem;
             font-family: sans-serif;
             text-decoration: none;
             color: $text;
+          
             
 
             &:hover{
@@ -68,24 +68,41 @@
     }
 
     /*
-    TABLET 480 - 990PX
+    TABLET 480 - 990
     */
     
 
-    @media screen and (min-width: 480px) {
-    
+    @media screen and (max-width: 989px) {
+        
+            .header-nav-content{
+                position: fixed;
+                top: 5rem;
+                right: 0rem;
+                width: 50%;
+                height: 1000%; 
+                background-color: $primary;
+                flex-direction: column; 
+                row-gap: 5rem;
+                text-align: center;
+
+                .header-nav-content__link{
+                    padding-top:0;        
+                }
+            }
+
+        
+
        
     }
 
     /*
-    MOBILE UNDER 480 PX
-    */
+    Mobile under 480 px
+  
 
-    @media screen and (max-width: 479px) {
-    
+    @media screen and (max-width: 480px) {
+ 
 
-       
     }
-
+  */
 
 }
