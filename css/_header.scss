@@ -74,21 +74,21 @@
 
     @media screen and (max-width: 989px) {
         
-            .header-nav-content{
-                position: fixed;
-                top: 5rem;
-                right: 0rem;
-                width: 50%;
-                height: 1000%; 
-                background-color: $primary;
-                flex-direction: column; 
-                row-gap: 5rem;
-                text-align: center;
+        .header-nav-content{
+            position: fixed;
+            top: 5rem;
+            right: 0rem;
+            width: 50%;
+            height: 1000%; 
+            background-color: $primary;
+            flex-direction: column; 
+            row-gap: 5rem;
+            text-align: center;
 
                 .header-nav-content__link{
                     padding-top:0;        
                 }
-            }
+        }
 
         
 
