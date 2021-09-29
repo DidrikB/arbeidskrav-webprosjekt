@@ -164,6 +164,7 @@ table {
     grid-column: auto/span 12;
   }
 }
+
 @media screen and (min-width: 480px) {
   .main-page-banner {
     grid-template-columns: repeat(12, 1fr);
