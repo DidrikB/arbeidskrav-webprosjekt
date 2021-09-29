@@ -23,9 +23,6 @@
         display: none;
     }
     
-    .hamburger-menu{
-        margin: 2rem;
-    }
 
     .header-nav-content{
         display: flex;
@@ -56,7 +53,9 @@
             display: flex;
         }
 
-
+         .hamburger-menu{
+            display:none;
+        }
        
     }
 
