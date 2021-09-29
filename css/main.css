@@ -64,21 +64,18 @@ table {
   top: 0;
   width: 100vw;
   /*
-  PC 990 PX AND BIGGER
-  */
-  /*
   TABLET AND MOBILE 0 - 990
   */
   /*
-    Mobile under 480 px
+  PC 990 PX AND BIGGER
   */
 }
 .header .header-logo {
   text-decoration: none;
-  font-family: sans-serif;
+  font-style: italic;
   font-size: 1.3rem;
   padding: 1rem;
-  color: white;
+  color: #F0FFF7;
 }
 .header .header-nav {
   display: none;
@@ -94,18 +91,10 @@ table {
   padding: 2rem;
   font-family: sans-serif;
   text-decoration: none;
-  color: white;
+  color: #F0FFF7;
 }
 .header .header-nav-content .header-nav-content__link:hover {
   background-color: #0477BF;
-}
-@media screen and (min-width: 990px) {
-  .header .header-nav {
-    display: flex;
-  }
-  .header .hamburger-menu {
-    display: none;
-  }
 }
 @media screen and (max-width: 989px) {
   .header .header-nav-content {
@@ -127,6 +116,14 @@ table {
     padding-right: 45%;
     padding-bottom: 2.5rem;
     border-top: solid;
+  }
+}
+@media screen and (min-width: 990px) {
+  .header .header-nav {
+    display: flex;
+  }
+  .header .hamburger-menu {
+    display: none;
   }
 }
 
@@ -158,16 +155,16 @@ table {
   .main-page-banner-content-text {
     background-color: #548C6F;
     height: 20rem;
-  }
-
-  .main-page-banner-content {
-    grid-column: auto/span 12;
-  }
-  .main-page-banner-content p {
     font-style: italic;
     font-size: 45px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #F0FFF7;
+  }
+
+  .main-page-banner-content {
+    grid-column: auto/span 12;
   }
 }
 @media screen and (min-width: 480px) {
@@ -178,17 +175,6 @@ table {
   .main-page-banner-content {
     display: grid;
     grid-column: span 6;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  .main-page-banner-content-img {
-    grid-column-start: 1;
-    grid-column-end: 13;
-  }
-
-  .main-page-banner-content-text {
-    grid-column-start: 1;
-    grid-column-end: 13;
   }
 }
 @media screen and (min-width: 990px) {
@@ -210,24 +196,29 @@ table {
     height: 35rem;
   }
 }
-/*
-.main-page-content{
-
-
-    .main-page-content-text-tittle{
-
-        text-align: center;
-        font-size: 30px;
-
-
-    }
-
-    .food-btn{
-        display: flex;
-
-     }
+.main-page-content {
+  display: flex;
+  justify-content: center;
 }
-*/
+
+.main-page-content-wrapper {
+  margin: 1rem;
+  width: 50rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #548C6F;
+}
+
+.main-page-content-wrapper-btn {
+  background-color: #0477BF;
+  color: #F0FFF7;
+  border: solid;
+  border-color: black;
+  padding: 2rem 5rem;
+}
+
 .footer {
   margin-top: 5rem;
   min-height: 15rem;

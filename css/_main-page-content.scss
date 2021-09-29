@@ -1,18 +1,24 @@
-/*
 .main-page-content{
-    
-
-    .main-page-content-text-tittle{
-        
-        text-align: center;
-        font-size: 30px;
-
-       
-    }
-
-    .food-btn{
-        display: flex;
-       
-     }
+    display: flex;
+    justify-content: center;
 }
-*/
+
+.main-page-content-wrapper{
+    margin: 1rem;
+    width: 50rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+
+    
+}
+
+.main-page-content-wrapper-btn{
+    background-color: $secondary;
+    color: $text;
+    border: solid;
+    border-color: black;
+    padding: 2rem 5rem;
+}

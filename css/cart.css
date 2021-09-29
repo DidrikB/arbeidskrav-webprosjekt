@@ -55,7 +55,7 @@ table {
 }
 
 .header {
-  background-color: #023E73;
+  background-color: #548C6F;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,21 +64,18 @@ table {
   top: 0;
   width: 100vw;
   /*
-  PC 990 PX AND BIGGER
-  */
-  /*
   TABLET AND MOBILE 0 - 990
   */
   /*
-    Mobile under 480 px
+  PC 990 PX AND BIGGER
   */
 }
 .header .header-logo {
   text-decoration: none;
-  font-family: sans-serif;
+  font-style: italic;
   font-size: 1.3rem;
   padding: 1rem;
-  color: #F2B705;
+  color: #F0FFF7;
 }
 .header .header-nav {
   display: none;
@@ -94,18 +91,10 @@ table {
   padding: 2rem;
   font-family: sans-serif;
   text-decoration: none;
-  color: #F2B705;
+  color: #F0FFF7;
 }
 .header .header-nav-content .header-nav-content__link:hover {
   background-color: #0477BF;
-}
-@media screen and (min-width: 990px) {
-  .header .header-nav {
-    display: flex;
-  }
-  .header .hamburger-menu {
-    display: none;
-  }
 }
 @media screen and (max-width: 989px) {
   .header .header-nav-content {
@@ -116,7 +105,7 @@ table {
     right: 0rem;
     width: 50%;
     height: 1000%;
-    background-color: #023E73;
+    background-color: #548C6F;
     flex-direction: column;
     row-gap: 5rem;
     text-align: center;
@@ -129,11 +118,63 @@ table {
     border-top: solid;
   }
 }
+@media screen and (min-width: 990px) {
+  .header .header-nav {
+    display: flex;
+  }
+  .header .hamburger-menu {
+    display: none;
+  }
+}
 
+.cart-page-content {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 5rem);
+  grid-gap: 1rem;
+  grid-template-areas: "item-a item-d" "item-b item-d" "item-c item-d" "item-e item-e";
+}
+
+.cart-page-content-item {
+  border: solid;
+}
+
+.a {
+  grid-area: item-a;
+}
+
+.b {
+  grid-area: item-b;
+}
+
+.c {
+  grid-area: item-c;
+}
+
+.d {
+  grid-area: item-d;
+  background-color: #548C6F;
+}
+
+.e {
+  grid-area: item-e;
+}
+
+@media screen and (min-width: 480px) {
+  .cart-page-content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 5rem);
+    grid-gap: 1rem;
+    grid-template-areas: "item-a item-d" "item-b item-d" "item-c item-d" ". item-e";
+  }
+}
 .footer {
   margin-top: 5rem;
   min-height: 15rem;
-  background-color: #023E73;
+  background-color: #548C6F;
   color: white;
 }
 .footer .footer-content {

@@ -13,7 +13,7 @@
 
     .header-logo{
         text-decoration: none;
-        font-family: sans-serif;
+        font-style: italic;
         font-size: 1.3rem;
         padding: 1rem;
         color: $text;
@@ -47,24 +47,6 @@
     }
 
     /*
-    PC 990 PX AND BIGGER
-    */
-
-    @media screen and (min-width: 990px) {
-
-        .header-nav{
-            display: flex;
-        }
-
-        .hamburger-menu{
-            display: none;
-        }
-
-
-
-    }
-
-    /*
     TABLET AND MOBILE 0 - 990
     */
 
@@ -85,22 +67,31 @@
             text-align: center;
 
 
-                .header-nav-content__link{
-                    padding-top: 2.5rem;
-                    padding-left: 45%;
-                    padding-right: 45% ;
-                    padding-bottom: 2.5rem;
-                    border-top: solid;
-                }
+            .header-nav-content__link{
+                padding-top: 2.5rem;
+                padding-left: 45%;
+                padding-right: 45% ;
+                padding-bottom: 2.5rem;
+                border-top: solid;
+            }
+        }
+    }
+
+    /*
+    PC 990 PX AND BIGGER
+    */
+
+    @media screen and (min-width: 990px) {
+
+        .header-nav{
+            display: flex;
+        }
+
+        .hamburger-menu{
+            display: none;
         }
 
 
 
-
     }
-
-    /*
-    Mobile under 480 px
-  */
-
 }

@@ -34,19 +34,17 @@
     .main-page-banner-content-text{
         background-color: $primary;
         height: 20rem;
+        font-style: italic;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text;
     }
 
     .main-page-banner-content{
 
         grid-column: auto /span 12;
-
-        p{
-            font-style: italic;
-            font-size: 45px;
-            display: flex;
-            align-items: center;
-
-        }
 
     }
 
@@ -70,20 +68,9 @@
     .main-page-banner-content{
         display: grid;
         grid-column: span 6;
-        grid-template-columns:repeat(12, 1fr); 
 
     }
 
-    .main-page-banner-content-img{
-        grid-column-start: 1;
-        grid-column-end: 13;
-
-    }
-
-    .main-page-banner-content-text{
-        grid-column-start: 1;
-        grid-column-end: 13;
-    }
 
 }
 
