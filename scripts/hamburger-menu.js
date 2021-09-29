@@ -14,3 +14,12 @@ const changeDisplay = () => {
 }
 
 hamburgerMenu.addEventListener("click",changeDisplay);
+
+const checkResize = () => {
+    const display = headerContainer.style.display;
+    if(window.innerWidth > 768 && display === "none"){
+        headerContainer.style.display= "block";
+    }
+    
+}
+window.addEventListener("resize", checkResize);
