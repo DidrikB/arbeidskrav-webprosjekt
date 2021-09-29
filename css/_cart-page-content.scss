@@ -8,11 +8,23 @@
     "item-a item-d"
     "item-b item-d"
     "item-c item-d"
-    "item-e item-e";
+    "item-e item-e"
+
 }
 
 .cart-page-content-item{
     border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+
+    p{
+        text-align: center;
+        font-size: 8px;
+    }
 }
 
 .a{
@@ -27,13 +39,13 @@
     grid-area: item-c;
 }
 
-.d{
+.delivery-info{
     grid-area: item-d;
     background-color: $primary;
 }
 
-.e{
-    grid-area: item-e ;
+.order-info{
+    grid-area: item-e;
 }
 
 @media screen and (min-width: 480px) {
