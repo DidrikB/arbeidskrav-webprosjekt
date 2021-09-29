@@ -103,6 +103,9 @@ table {
   .header .header-nav {
     display: flex;
   }
+  .header .hamburger-menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 989px) {
   .header .header-nav-content {
