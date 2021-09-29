@@ -83,6 +83,9 @@ table {
 .header .header-nav {
   display: none;
 }
+.header .hamburger-menu {
+  margin: 2rem;
+}
 .header .header-nav-content {
   display: flex;
   flex-direction: row;
@@ -94,7 +97,7 @@ table {
   color: #F2B705;
 }
 .header .header-nav-content .header-nav-content__link:hover {
-  background-color: #F0FFF7;
+  background-color: #0477BF;
 }
 @media screen and (min-width: 990px) {
   .header .header-nav {

@@ -10,7 +10,7 @@ const changeDisplay = () => {
     }else {
         headerContainer.style.display = "none";
     }
-    
+
 }
 
 hamburgerMenu.addEventListener("click",changeDisplay);
@@ -20,6 +20,6 @@ const checkResize = () => {
     if(window.innerWidth > 768 && display === "none"){
         headerContainer.style.display= "block";
     }
-    
+
 }
 window.addEventListener("resize", checkResize);

@@ -1,8 +1,7 @@
-
 .main-page-banner{
     padding-top: 5rem;
     display: grid;
-    
+
 }
 
 .main-page-banner-content-img{
@@ -31,24 +30,24 @@
         width: 100%;
         height: 20rem;
     }
-    
+
     .main-page-banner-content-text{
         background-color: $primary;
         height: 20rem;
     }
-    
+
     .main-page-banner-content{
-        
+
         grid-column: auto /span 12;
 
         p{
             font-style: italic;
-            font-size: 50px;
+            font-size: 45px;
             display: flex;
             align-items: center;
-            
+
         }
-        
+
     }
 
 
@@ -61,34 +60,30 @@
 
 
 @media screen and (min-width: 480px) {
-    
+
     .main-page-banner{
 
         grid-template-columns: repeat(12, 1fr);
-        
+
     }
 
     .main-page-banner-content{
         display: grid;
         grid-column: span 6;
         grid-template-columns:repeat(12, 1fr); 
-        
+
     }
 
     .main-page-banner-content-img{
         grid-column-start: 1;
         grid-column-end: 13;
-     
+
     }
 
     .main-page-banner-content-text{
         grid-column-start: 1;
         grid-column-end: 13;
     }
-
-
-
-
 
 }
 
@@ -103,25 +98,19 @@
     .main-page-banner{
         grid-template-columns: repeat(12, 1fr);
     }
-    
+
     .main-page-banner-content{
         grid-column: auto /span 6;
-        
+
     }
 
     .main-page-banner-content-img{
         width: 100%;
         height: 35rem;
     }
-    
+
     .main-page-banner-content-text{
         background-color: $primary;
         height: 35rem;
     }
 }
-
-
-
-
-
-

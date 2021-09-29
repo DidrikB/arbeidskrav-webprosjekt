@@ -60,8 +60,6 @@ table {
   justify-content: space-between;
   align-items: center;
   min-height: 5rem;
-  font-style: italic;
-  color: #F0FFF7;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -71,12 +69,16 @@ table {
   /*
   TABLET AND MOBILE 0 - 990
   */
+  /*
+    Mobile under 480 px
+  */
 }
 .header .header-logo {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 1.3rem;
   padding: 1rem;
+  color: white;
 }
 .header .header-nav {
   display: none;
@@ -92,14 +94,17 @@ table {
   padding: 2rem;
   font-family: sans-serif;
   text-decoration: none;
-  color: #F0FFF7;
+  color: white;
 }
 .header .header-nav-content .header-nav-content__link:hover {
-  background-color: #4E837E;
+  background-color: #0477BF;
 }
 @media screen and (min-width: 990px) {
   .header .header-nav {
     display: flex;
+  }
+  .header .hamburger-menu {
+    display: none;
   }
 }
 @media screen and (max-width: 989px) {
@@ -128,11 +133,6 @@ table {
 .main-page-banner {
   padding-top: 5rem;
   display: grid;
-  font-style: italic;
-  font-size: 45px;
-  display: flex;
-  align-items: center;
-  color: #F0FFF7;
 }
 
 .main-page-banner-content-img {
@@ -163,8 +163,13 @@ table {
   .main-page-banner-content {
     grid-column: auto/span 12;
   }
+  .main-page-banner-content p {
+    font-style: italic;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+  }
 }
-
 @media screen and (min-width: 480px) {
   .main-page-banner {
     grid-template-columns: repeat(12, 1fr);

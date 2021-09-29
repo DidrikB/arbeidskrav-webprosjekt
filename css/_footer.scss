@@ -1,21 +1,21 @@
 .footer{
-    
-        margin-top: 5rem;
-        min-height: 15rem;
-        background-color: $primary;
-        color: white;
 
-        .footer-content{
-            padding:0;
-            list-style:none;
-            text-align:center;
-            font-size:18px;
-            line-height:1.6;
-            margin-bottom:0;
-          
-        .footer-content__link{
-            color:white;
-        }
-        }
-  
+    margin-top: 5rem;
+    min-height: 15rem;
+    background-color: $primary;
+    color: white;
+
+    .footer-content{
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+
+    .footer-content__link{
+        color:white;
+    }
+    }
+
 }

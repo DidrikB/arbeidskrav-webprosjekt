@@ -1,5 +1,5 @@
 .header{
-    
+
     background-color: $primary;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     position: fixed;
     top: 0; 
     width: 100vw;
-    
+
 
     .header-logo{
         text-decoration: none;
@@ -22,7 +22,10 @@
     .header-nav{
         display: none;
     }
-    
+
+    .hamburger-menu{
+        margin: 2rem;
+    }
 
     .header-nav-content{
         display: flex;
@@ -33,39 +36,41 @@
             font-family: sans-serif;
             text-decoration: none;
             color: $text;
-          
-            
+
+
 
             &:hover{
                 background-color: $secondary;
             }
         }
-      
+
     }
-    
+
     /*
     PC 990 PX AND BIGGER
     */
 
     @media screen and (min-width: 990px) {
-    
+
         .header-nav{
             display: flex;
         }
 
-         .hamburger-menu{
-            display:none;
+        .hamburger-menu{
+            display: none;
         }
-       
+
+
+
     }
 
     /*
     TABLET AND MOBILE 0 - 990
     */
-    
+
 
     @media screen and (max-width: 989px) {
-        
+
         .header-nav-content{
             position: fixed;
             border: solid;
@@ -78,7 +83,7 @@
             flex-direction: column; 
             row-gap: 5rem;
             text-align: center;
-            
+
 
                 .header-nav-content__link{
                     padding-top: 2.5rem;
@@ -89,9 +94,9 @@
                 }
         }
 
-        
 
-       
+
+
     }
 
     /*
