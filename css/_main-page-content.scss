@@ -1,24 +1,103 @@
+//MOBILE
+
 .main-page-content{
-    display: flex;
-    justify-content: center;
-}
-
-.main-page-content-wrapper{
-    margin: 1rem;
-    width: 50rem;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary;
-
+    display: grid;
     
 }
 
-.main-page-content-wrapper-btn{
-    background-color: $secondary;
-    color: $text;
-    border: solid;
-    border-color: black;
-    padding: 2rem 5rem;
+.main-page-content-wrapper{
+  
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 40rem);
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "item-a"
+    "item-b"
+    "item-c"
+    "item-d"
+    "item-e"
+    "item-f";
 }
+
+.main-page-content-wrapper-img{
+    border: solid;
+    background-size: cover;
+}
+
+
+
+.a{
+    grid-area: item-a;
+    background-image: url(/images/pizzameny.png);
+}
+
+.b{
+    grid-area: item-b;
+    background-image: url(/images/pizzameny1.png);
+}
+
+.c{
+    grid-area: item-c;
+    background-image: url(/images/pastameny.png);
+}
+
+.d{
+    grid-area: item-d;
+    background-image: url(/images/pastameny1.png);
+
+}
+
+.e{
+    grid-area: item-e ;
+    background-image: url(/images/drikkemeny.png);
+}
+.f{
+    grid-area: item-f;
+    background-image: url(/images/drikkemeny1.png);
+}
+
+
+//TABLET
+
+
+@media screen and (min-width: 480px) {
+
+
+    .main-page-content-wrapper{
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 40rem);
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "item-a item-b"
+        "item-c item-d"
+        "item-e item-f";
+    }
+
+
+}
+
+//PC
+
+
+@media screen and (min-width: 990px) {
+
+
+    .main-page-content-wrapper{
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40rem);
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "item-a item-b item-c"
+        "item-d item-e item-f";
+    }
+
+
+}
+
+
