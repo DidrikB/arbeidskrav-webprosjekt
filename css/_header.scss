@@ -22,15 +22,10 @@
     .header-nav{
         display: none;
     }
-
     
     .hamburger-menu{
-        margin: 1rem;
-
+        margin: 2rem;
     }
-
-
-    
 
     .header-nav-content{
         display: flex;
@@ -61,14 +56,12 @@
             display: flex;
         }
 
-         .hamburger-menu{
-            display:none;
-        }
+
        
     }
 
     /*
-    TABLET 480 - 990
+    TABLET AND MOBILE 0 - 990
     */
     
 
@@ -76,6 +69,8 @@
         
         .header-nav-content{
             position: fixed;
+            border: solid;
+            padding-top: 2.5rem;
             top: 5rem;
             right: 0rem;
             width: 50%;
@@ -84,9 +79,14 @@
             flex-direction: column; 
             row-gap: 5rem;
             text-align: center;
+            
 
                 .header-nav-content__link{
-                    
+                    padding-top: 2.5rem;
+                    padding-left: 45%;
+                    padding-right: 45% ;
+                    padding-bottom: 2.5rem;
+                    border-top: solid;
                 }
         }
 
