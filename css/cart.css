@@ -167,6 +167,7 @@ table {
 
 .order-info {
   grid-area: item-e;
+  background-color: #548C6F;
 }
 
 @media screen and (min-width: 480px) {

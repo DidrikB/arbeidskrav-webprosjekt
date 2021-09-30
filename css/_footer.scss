@@ -3,7 +3,7 @@
     margin-top: 5rem;
     min-height: 15rem;
     background-color: $primary;
-    color: white;
+    color:$text;
 
     .footer-content{
         padding:0;
@@ -14,7 +14,7 @@
         margin-bottom:0;
 
     .footer-content__link{
-        color:white;
+        color:$text;
     }
     }
 
